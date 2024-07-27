@@ -4,16 +4,25 @@
 {% block title %}Contact{% endblock %}
 
 {% block content %}
-<h1>Contáctanos</h1><br>
+<h1>Contáctanos</h1>
+
+<p> Formulario HTML </p>
 
 <div class="django-description">
-    
     <form action="/contact/" method="POST">{% csrf_token %}
-        
-        <p> Asunto: <input type="text" name="asunto"></p>
-        <p> Email:  <input type="text" name="email"></p>
-        <p> Mensaje: <textarea name="mensaje" rows='15' cols='45'></textarea></p>
-        <input type ='submit' value='Enviar'>
+        <div class="form-group">
+            <p><label for="asunto">Asunto:</label></p>
+            <input type="text" id="asunto" name="asunto">
+        </div>
+        <div class="form-group">
+            <p><label for="email">Email:</label></p>
+            <input type="text" id="email" name="email">
+        </div>
+        <div class="form-group">
+            <p><label for="mensaje">Mensaje:</label></p>
+            <textarea id="mensaje" name="mensaje" rows="15" cols="45"></textarea>
+        </div>
+        <input type="submit" value="Enviar">
     </form>
 </div>
 {% endblock %}

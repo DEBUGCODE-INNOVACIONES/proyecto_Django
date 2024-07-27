@@ -104,6 +104,7 @@ main{
 }
 .django-description {
     margin-top: 20px; /* Adjust this value to increase or decrease the space */
+
 }
 
 /*porfolio*/
@@ -119,6 +120,83 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-text);
     font-family: var(--font-body);
 }
+
+/*contact*/
+
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 16px;
+}
+.django-description input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-family: var(--font-title);
+}
+
+.django-description input[type="submit"]:hover {
+    background-color: #45a049;
+}
+/*django form*/ 
+.django-description {
+    font-family: var(--font-title);
+}
+
+.form-group {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 16px;
+}
+
+.form-group p {
+    margin-bottom: 15px; /* Espacio entre cada campo del formulario */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Color de fondo del botón en hover */
+}
+
+/*footer*/
 
 footer {
     width: 100vw;
