@@ -1,0 +1,26 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block title %}Encontrado{% endblock %}
+
+{% block content %}
+<br><h1>Encontrado</h1><br>
+<hr>
+<div class="django-description">
+   <p>Estás buscando: <strong>{{ query }}</strong></p>
+   {% if servicios %}<br>
+   
+   <br><p>Servicios encontrados: {{ servicios|length }} {{ servicios|length|pluralize:"servicio,servicios" }}</p><br>
+   <ul style="list-style-type: none; padding: 0;">      {% for ss in servicios %}
+      <li><br>
+       
+         <p>Nombre del servicio encontrado: {{ ss.nombre }} - Sección: {{ ss.seccion }} - Precio: u$s{{ ss.precio }}</p><br>
+      </li>
+      {% endfor %}
+   </ul>
+
+   {% else %}
+   <p>Aún no contamos con ese servicio.</p>
+   {% endif %}
+</div>
+{% endblock %}

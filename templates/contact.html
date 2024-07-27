@@ -1,0 +1,19 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+<h1>Contáctanos</h1><br>
+
+<div class="django-description">
+    
+    <form action="/contact/" method="POST">{% csrf_token %}
+        
+        <p> Asunto: <input type="text" name="asunto"></p>
+        <p> Email:  <input type="text" name="email"></p>
+        <p> Mensaje: <textarea name="mensaje" rows='15' cols='45'></textarea></p>
+        <input type ='submit' value='Enviar'>
+    </form>
+</div>
+{% endblock %}

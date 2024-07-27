@@ -1,9 +1,10 @@
 {% extends 'layouts/base.html' %}
+{% load static %}
 
 {% block title %}Buscar{% endblock %}
 
 {% block content %}
-<h1>Buscar Servicio</h1><br>
+<br><h1>Buscar Servicio</h1><br>
 
 <div class="django-description">
     <form action="{% url 'search' %}" method="GET">
