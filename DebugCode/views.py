@@ -48,12 +48,12 @@ def contactForm(request):
         if form.is_valid():
             infForm = form.cleaned_data
             send_mail(
-                infForm['subject'],
-                infForm['message'],
+                infForm['asunto'],
+                infForm['mensaje'],
                 infForm.get('email', ''),
                 ['maria.victoria.webdev@gmail.com']
             )
-            return render(request, 'home.html')
+            return render(request, 'gracias.html')
     else:
         form = ContactForm()
     
