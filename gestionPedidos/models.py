@@ -19,9 +19,11 @@ class Servicios (models.Model):
         return self.seccion
 
 class Pedidos (models.Model):
-    numero = models.IntegerField()
+    nombre= models.CharField(max_length=30, null=True, blank=True)
     fecha = models.DateField()
     entregado = models.BooleanField()
+    enProceso=models.BooleanField(null=True, blank=True)
+    verificando=models.BooleanField(null=True, blank=True)
     comentario = models.TextField(null=True, blank=True)
 
     def __str__(self):
@@ -29,6 +31,7 @@ class Pedidos (models.Model):
 
 class Programador (models.Model):
     nombre = models.CharField(max_length=30)
+    desarrollo= models.CharField(max_length=30, null=True, blank=True)
 
     def __str__(self) -> str:
         return self.nombre
