@@ -65,8 +65,8 @@ nav ul li a{
     text-decoration: none;
     color: var(--color-text);
     font-family: var(--font-title);
-    font-weight: 700;
-    font-size: 30px;
+    font-weight: 650;
+    font-size: 25px;
 }
 
 nav ul li a:hover{
@@ -219,8 +219,8 @@ footer ul li a{
     text-decoration: none;
     color: var(--color-text);
     font-family: var(--font-title);
-    font-weight: 700;
-    font-size: 30px;
+    font-weight: 650;
+    font-size: 20px;
 }
 
 footer ul li a:hover{
