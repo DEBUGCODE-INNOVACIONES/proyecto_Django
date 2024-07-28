@@ -1,0 +1,13 @@
+{% load static %}
+
+<nav>
+    <img src="{% static 'img/logo.png' %}" alt="Logo" class="logo" width="80">
+    <ul>
+        <li><a href="{% url 'home' %}">Inicio</a></li>
+        <li><a href="{% url 'contact' %}">Contacto HTML</a></li>
+        <li><a href="{% url 'contactForm' %}">Contacto FORM</a></li>
+        <li><a href="{% url 'searchingServices' %}">Buscar</a></li>
+        <li><a href="{% url 'admin:index' %}">Administración</a></li>
+    </ul>
+</nav>
+

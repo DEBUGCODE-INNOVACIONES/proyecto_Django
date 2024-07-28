@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        {% block title %}
+       base
+        {% endblock %}
+    </title>
+</head>
+<body>
+    <h1 style='background-color: darkcyan; color : white ;text-align: center;'>DebugCode</h1>
+
+    {% include "layouts/nav.html" %}
+
+    <h3>Primer proyecto Django </h3>
+
+    {% block content %}
+    {% endblock %}
+
+    {% include "layouts/footer.html" %}
+
+    <p  style='background-color: darkcyan; color : white ;text-align: left;'>Desarrollo en Django, María Victoria</p>
+</body>
+</html>
